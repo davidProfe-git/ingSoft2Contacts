@@ -1,0 +1,62 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Contenedor principal que incluye la imagen y la información de contacto */
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Estilos para la imagen */
+.imagen {
+    margin-right: 20px;
+}
+
+.imagen-contacto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+}
+
+/* Estilos para la sección de contacto */
+.contacto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.contacto h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.contacto strong {
+    color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+    .contacto-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
