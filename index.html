@@ -1,0 +1,49 @@
+<!-- archivo: index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRUD de Contactos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Gestión de Contactos</h1>
+
+    <!-- Formulario para agregar/editar contactos -->
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Nombre" required>
+      <input type="text" id="phone" placeholder="Teléfono" required>
+      <input type="email" id="email" placeholder="Correo electrónico" required>
+      <button type="submit">Guardar Contacto</button>
+    </form>
+
+    <!-- Tabla de contactos -->
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Teléfono</th>
+          <th>Correo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="contact-list">
+        <!-- Aquí se agregarán los contactos dinámicamente -->
+        <tr>
+          <td>Juan Pérez</td>
+          <td>123456789</td>
+          <td>juan@email.com</td>
+          <td>
+            <button class="edit">Editar</button>
+            <button class="delete">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
