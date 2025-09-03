@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directorio de Contactos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <main class="container">
-        <article style="text-align: center; padding: 2rem;">
-            <img src="https://img.freepik.com/vector-premium/icono-negocio-persona-contacto-estilo-plano_833641-1317.jpg" alt="Foto" width="120" style="border-radius:50%">
-            <h4>Daniel Mateus</h4>
-            <div>📧 daniel.mateus@pi.edu.co</div>
-            <div>📞 +57 3205967865</div>
-            <div>📍 Isla del Sol</div>
-        </article>
-    </main>
+  <main class="container">
+    <header class="header">
+      <h1>📇 Directorio de Contactos</h1>
+    </header>
+
+    <section class="contact-grid">
+      <article class="contact-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIrGE1ET2NcJ7KuNwLncc6Jz4TsrfAUbCFDA&s" alt="Daniel Mateus" />
+        <h2>Daniel Mateus</h2>
+        <ul>
+          <li><span>📧</span> <a href="mailto:daniel.mateus@pi.edu.co">daniel.mateus@pi.edu.co</a></li>
+          <li><span>📞</span> <a href="tel:+573205967865">+57 320 596 7865</a></li>
+          <li><span>📍</span> Isla del Sol</li>
+        </ul>
+      </article>
+
+      <article class="contact-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrLyO8blwBY3TXhDu1LU92eKUmGcTHLDWqMw&s" alt="Laura Gómez" />
+        <h2>Laura Gómez</h2>
+        <ul>
+          <li><span>📧</span> <a href="mailto:laura.gomez@pi.edu.co">laura.gomez@pi.edu.co</a></li>
+          <li><span>📞</span> <a href="tel:+573105432198">+57 310 543 2198</a></li>
+          <li><span>📍</span> Bogotá, Colombia</li>
+        </ul>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
