@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,108 +8,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    :root{
-      --bg: #e9edf3;
-      --card: rgba(120, 126, 140, 0.25);
-      --card-border: #bfc6d6;
-      --text: #2b2f39;
-      --muted: #525864;
-      --accent: #7c8cff;
-      --shadow: 0 12px 35px rgba(0,0,0,.15);
-      --radius: 28px;
-    }*{ box-sizing: border-box; }
-html,body{ height:100%; }
-body{
-  margin:0;
-  font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-  background: radial-gradient(1200px 600px at 15% 10%, #f8fbff 0, #e9edf3 50%, #dfe4ee 100%);
-  color:var(--text);
-  display:grid;
-  place-items:center;
-  padding:32px;
-}
- 
-.card{
-  position:relative;
-  display:flex;
-  align-items:center;
-  gap:18px;
-  width:min(680px, 92vw);
-  min-height: 190px;
-  padding:22px 26px;
-  background: var(--card);
-  border: 2px solid var(--card-border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-}
- 
-.avatar{
-  width:100px; height:100px;
-  flex:0 0 100px;
-  border-radius: 20px;
-  object-fit: cover;
-  border: 3px solid #cfd6ea;
-  box-shadow: 0 6px 18px rgba(0,0,0,.12) inset;
-  background:#e1e6f5;
-}
- 
-.info{ flex:1; min-width:0; }
- 
-.name{
-  margin: 4px 0 6px;
-  font-weight:700;
-  font-size: clamp(26px, 4.5vw, 42px);
-  letter-spacing:.3px;
-  color:#3a4155;
-  text-shadow: 0 1px 0 rgba(255,255,255,.45);
-}
- 
-.row{
-  display:flex; align-items:center; gap:10px;
-  color: var(--muted);
-  font-weight:600;
-}
-.label{ opacity:.85; min-width:40px; font-size:14px; }
-.value{ word-break:break-word; font-size:15px; }
- 
-.chip{
-  position:absolute; right:16px; top:16px;
-  font-size:12px; font-weight:600;
-  padding:6px 10px; border-radius:999px;
-  border:1px solid #cbd3ea; background:#f3f6ff20;
-  color:#4b556b;
-}
- 
-
-.card:hover{ transform: translateY(-2px); box-shadow: 0 16px 40px rgba(0,0,0,.18); }
- 
-@media (prefers-color-scheme: dark){
-  :root{ --bg:#0f1320; --card: rgba(255,255,255,.06); --card-border:#30364a; --text:#e7ebff; --muted:#b9c1d9;}
-  body{ background: radial-gradient(1200px 600px at 15% 10%, #13182a 0, #0f1320 60%, #0b0f1c 100%); }
-  .avatar{ border-color:#3a4260; background:#1a2140; }
-  .name{ color:#e7ebff; text-shadow:none; }
-  .chip{ border-color:#3a4260; color:#c8d2f3; }
-}
- 
-  </style>
 </head>
-<body>  <article class="card" role="contentinfo" aria-label="Tarjeta de contacto">
-    <img class="avatar" src="https://i.pinimg.com/736x/17/71/6f/17716f5dc8bbf8115cf69aeb4caa9628.jpg" alt="Foto de perfil" /><div class="info">
-  <h1 class="name">David Rugeles</h1>
-  <div class="row" aria-label="Teléfono">
-    <span class="label">Cel:</span>
-    <span class="value">74329545</span>
-  </div>
-  <div class="row" aria-label="Correo">
-    <span class="label">Email:</span>
-    <span class="value">correo.profe@correo.com</span>
-  </div>
-</div>
- 
-<span class="chip">Contacto</span>
- 
-  </article></body>
+<body>
+  <article class="card" role="contentinfo" aria-label="Tarjeta de contacto">
+    <img class="avatar" src="https://i.pinimg.com/736x/17/71/6f/17716f5dc8bbf8115cf69aeb4caa9628.jpg" alt="Foto de perfil" />
+    <div class="info">
+      <h1 class="name">Maicol Gonzalez</h1>
+      <div class="row" aria-label="Teléfono">
+        <span class="label">Cel:</span>
+        <span class="value">30429545</span>
+      </div>
+      <div class="row" aria-label="Correo">
+        <span class="label">Email:</span>
+        <span class="value">maicol.gonzalez@gmail.com</span>
+      </div>
+    </div>
+    <span class="chip">Contacto</span>
+  </article>
+</body>
 </html>
