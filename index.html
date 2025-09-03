@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Contactos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f6fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+        }
+        h1 {
+            text-align: center;
+            color: #2d3e50;
+            margin-bottom: 24px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #eaf0fa;
+            margin-bottom: 16px;
+            padding: 16px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #b3c6e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #fff;
+            margin-right: 16px;
+            font-weight: bold;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-name {
+            font-size: 18px;
+            color: #2d3e50;
+            font-weight: 500;
+        }
+        .contact-email {
+            font-size: 15px;
+            color: #5a6b7a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mis Contactos</h1>
+        <ul>
+            <li>
+                <div class="avatar">JP</div>
+                <div class="contact-info">
+                    <span class="contact-name">Juan Pérez</span>
+                    <span class="contact-email">juanperez@gmail.com</span>
+                </div>
+            </li>
+            <li>
+                <div class="avatar">ML</div>
+                <div class="contact-info">
+                    <span class="contact-name">María López</span>
+                    <span class="contact-email">marialopez@gmail.com</span>
+                </div>
+            </li>
+            <li>
+                <div class="avatar">CR</div>
+                <div class="contact-info">
+                    <span class="contact-name">Carlos Ramírez</span>
+                    <span class="contact-email">carlosramirez@gmail.com</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
