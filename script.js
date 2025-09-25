@@ -1,4 +1,4 @@
-fetch("https://randomuser.me/api/?results=10")
+fetch("https://randomuser.me/api/?results=10&nat=mx")
     .then(resp => resp.json())
     .then(datos =>  {
 
