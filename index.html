@@ -3,68 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestor de Contactos</title>
+  <title>Random User Generator | Home</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app">
-    <header>
-      <div class="logo">GC</div>
-      <div>
-        <h1>Gestor de Contactos</h1>
-        <p class="lead">Añade, edita y organiza tus contactos</p>
-      </div>
-    </header>
+  <header>
+    <h1>Usuarios Aleatorios</h1>
+  </header>
 
-    <div class="top-controls">
-      <input id="q" type="text" placeholder="Buscar contacto...">
-      <button class="btn" id="exportBtn">Exportar</button>
-      <button class="btn ghost" id="importBtn">Importar</button>
-    </div>
+  <main>
+    <button id="btnLoad">Cargar Usuarios</button>
+    <div id="userContainer" class="user-container"></div>
+  </main>
 
-    <div class="layout">
-      <!-- Panel izquierdo: formulario -->
-      <aside>
-        <div class="card">
-          <h3>Nuevo contacto</h3>
-          <form id="contactForm">
-            <input type="hidden" id="contactId">
+  <footer>
+    <p>Consumo del API Random User Generator</p>
+  </footer>
 
-            <label>Nombre</label>
-            <input id="name" required>
-
-            <label>Email</label>
-            <input id="email" type="email">
-
-            <label>Teléfono</label>
-            <input id="phone">
-
-            <label>Etiqueta</label>
-            <input id="tags" placeholder="amigo, trabajo">
-
-            <label>Notas</label>
-            <textarea id="notes"></textarea>
-
-            <div class="actions">
-              <button class="btn" type="submit">Guardar</button>
-              <button class="btn ghost" type="button" id="clearForm">Limpiar</button>
-            </div>
-          </form>
-        </div>
-      </aside>
-
-      <!-- Panel derecho: lista -->
-      <main>
-        <div class="card">
-          <h3>Contactos (<span id="total">0</span>)</h3>
-          <div class="contacts-list" id="list">
-            <div class="empty">No hay contactos aún</div>
-          </div>
-        </div>
-      </main>
-    </div>
-  </div>
-
-  <script src="js/app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
