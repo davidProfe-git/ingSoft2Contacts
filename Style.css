@@ -1,0 +1,59 @@
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      font-family: "Orbitron", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #00fff7;
+      text-shadow: 0 0 10px #00fff7;
+    }
+
+    #tarjeta1 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid #00fff7;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px #00fff7;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px #00fff7;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #00fff7;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px #00fff7;
+    }
+
+    .card h2 {
+      margin: 10px 0;
+      color: #00fff7;
+    }
+
+    .card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #d1faff;
+    }
