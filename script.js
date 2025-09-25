@@ -8,6 +8,10 @@ fetch("https://randomuser.me/api/?results=10")
             contenido.className = "contact-card"
             contenido.innerHTML = `
             <img src="${contactos.picture.large}" />
+            <h2>${contactos.name.first} ${contactos.name.last}</h2>
+            <p><strong>Email:</strong> ${contactos.email}</p>
+            <p><strong>Teléfono:</strong> ${contactos.phone}</p>
+            <p><strong>Ciudad:</strong> ${contactos.location.city}</p>
             `
             tarjeta.appendChild(contenido)
 
