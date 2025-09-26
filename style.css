@@ -1,119 +1,97 @@
-:root {
-  --bg: #e9edf3;
-  --card: rgba(120, 126, 140, 0.25);
-  --card-border: #bfc6d6;
-  --text: #2b2f39;
-  --muted: #525864;
-  --accent: #7c8cff;
-  --shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-  --radius: 28px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
 body {
   margin: 0;
-  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: radial-gradient(1200px 600px at 15% 10%, #f8fbff 0, #e9edf3 50%, #dfe4ee 100%);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #0f1320 0%, #1a1f33 50%, #0b0f1f 100%);
   color: var(--text);
-  display: grid;
-  place-items: center;
-  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+  gap: 24px;
 }
 
+/* Contenedor general de tarjetas */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 760px;
+}
+
+/* Tarjeta */
 .card {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 18px;
-  width: min(680px, 92vw);
-  min-height: 190px;
-  padding: 22px 26px;
-  background: var(--card);
-  border: 2px solid var(--card-border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid #2d3347;
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.4);
+}
+
+/* Avatar */
 .avatar {
-  width: 100px;
-  height: 100px;
-  flex: 0 0 100px;
-  border-radius: 20px;
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 16px;
   object-fit: cover;
-  border: 3px solid #cfd6ea;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12) inset;
+  border: 2px solid #3b4258;
   background: #e1e6f5;
 }
 
+/* Info */
 .info {
   flex: 1;
-  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--text);
 }
 
 .name {
-  margin: 4px 0 6px;
   font-weight: 700;
-  font-size: clamp(26px, 4.5vw, 42px);
-  letter-spacing: 0.3px;
-  color: #3a4155;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  font-size: 22px;
+  color: #e7ebff;
 }
 
 .row {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: var(--muted);
-  font-weight: 600;
+  gap: 8px;
+  font-size: 14px;
+  color: #b9c1d9;
 }
 
 .label {
-  opacity: 0.85;
-  min-width: 40px;
-  font-size: 14px;
+  font-weight: 600;
+  color: #e7ebff;
 }
 
 .value {
-  word-break: break-word;
-  font-size: 15px;
+  color: #b9c1d9;
 }
 
+/* Chip (ej: Contacto) */
 .chip {
   position: absolute;
-  right: 16px;
   top: 16px;
+  right: 16px;
   font-size: 12px;
-  font-weight: 600;
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 999px;
-  border: 1px solid #cbd3ea;
-  background: #f3f6ff20;
-  color: #4b556b;
+  border: 1px solid #3b4258;
+  background: rgba(255, 255, 255, 0.08);
+  color: #d3d9f0;
 }
-
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1320;
-    --card: rgba(255, 255, 255, 0.06);
-    --card-border: #30364a;
-    --text: #e7ebff;
-    --muted: #b9c1d9;
-  }
-
-  body {
-    background: radial-gradient(1200px 600px at 15% 10%, #13182a 0, #0f1320 60%, #0b0f
