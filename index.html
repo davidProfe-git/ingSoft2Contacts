@@ -3,37 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro de Contactos </title>
+  <title>Contactos - Random User API</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-  <header> Registro de Contactos</header>
+  <header>
+    <h1>Generador de Contactos</h1>
+    <button id="btnLoad"> Generar Usuario</button>
+  </header>
+
   <main>
-
-    <section>
-      <h2 id="form-title">Agregar Nuevo Contacto</h2>
-      <form id="contact-form">
-        <input type="text" id="name-input" placeholder="Nombre completo" required>
-        <input type="email" id="email-input" placeholder="Correo electrónico" required>
-        <input type="tel" id="phone-input" placeholder="Número de teléfono" required>
-        <button type="submit" id="form-button">Agregar Contacto</button>
-      </form>
-    </section>
-
-
-    <section>
-      <h2>Lista de Contactos</h2>
-      <div class="contact-count" id="contact-count">0 contactos registrados</div>
-      <div id="contacts-container">
-        <div class="empty-state">
-          No hay contactos registrados aún.<br>
-          ¡Agrega tu primer contacto usando el formulario de arriba!
-        </div>
-      </div>
-    </section>
+    <div id="userContainer" class="cards"></div>
   </main>
 
+  <footer>
+    <p>Hecho con  usando <a href="https://randomuser.me" target="_blank">Random User API</a></p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
