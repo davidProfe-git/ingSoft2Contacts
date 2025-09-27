@@ -1,3 +1,8 @@
+console.log("Script cargado");
+console.log("btnLoad elemento:", document.getElementById("btnLoad"));
+console.log("userContainer elemento:", document.getElementById("userContainer"));
+
+// Tu código actual aquí...
 document.addEventListener('DOMContentLoaded', function() {
     const btnLoad = document.getElementById("btnLoad");
     const userContainer = document.getElementById("userContainer");
