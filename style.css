@@ -1,38 +1,48 @@
 body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
 
-    .card {
-      background-color: #fff;
-      width: 300px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
 
-    .card img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border: 3px solid #4CAF50;
-    }
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
-    .card h2 {
-      margin: 0;
-      font-size: 22px;
-      color: #333;
-    }
+.card {
+  background-color: #fff;
+  width: 250px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
 
-    .card p {
-      margin: 5px 0;
-      color: #666;
-      font-size: 14px;
-    }
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #4CAF50;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
