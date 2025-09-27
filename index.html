@@ -1,98 +1,19 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contactos</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Usuario Aleatorio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1>Gestión de Contactos</h1>
+    <div class="container">
+        <h1>👤 Generador de Usuario Aleatorio</h1>
+        <div id="user-card" class="user-card">
+            <p>Cargando usuario...</p>
+        </div>
+        <button id="load-user-btn">Cargar Nuevo Usuario</button>
+    </div>
 
-    <form id="contact-form">
-      <input type="text" id="name" placeholder="Nombre" required>
-      <input type="text" id="phone" placeholder="Teléfono" required>
-      <input type="email" id="email" placeholder="Correo electrónico" required>
-      <button type="submit">Guardar Contacto</button>
-    </form>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Teléfono</th>
-          <th>Correo</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody id="contact-list">
-        <tr>
-          <td>Juan Pérez</td>
-          <td>123456789</td>
-          <td>juan@email.com</td>
-          <td>
-            <button class="edit">Editar</button>
-            <button class="delete">Eliminar</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <script>
-    const form = document.getElementById("contact-form");
-    const contactList = document.getElementById("contact-list");
-    let editRow = null; // Para saber si estamos editando
-
-    // Evento al enviar formulario
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
-
-      const name = document.getElementById("name").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const email = document.getElementById("email").value.trim();
-
-      if (!name || !phone || !email) return;
-
-      if (editRow) {
-        // Editar contacto existente
-        editRow.cells[0].textContent = name;
-        editRow.cells[1].textContent = phone;
-        editRow.cells[2].textContent = email;
-        editRow = null;
-      } else {
-        // Crear nueva fila
-        const row = document.createElement("tr");
-        row.innerHTML = `
-          <td>${name}</td>
-          <td>${phone}</td>
-          <td>${email}</td>
-          <td>
-            <button class="edit">Editar</button>
-            <button class="delete">Eliminar</button>
-          </td>
-        `;
-        contactList.appendChild(row);
-      }
-
-      form.reset();
-    });
-
-    // Delegación de eventos para editar/eliminar
-    contactList.addEventListener("click", function(e) {
-      if (e.target.classList.contains("delete")) {
-        e.target.closest("tr").remove();
-      }
-
-      if (e.target.classList.contains("edit")) {
-        editRow = e.target.closest("tr");
-        document.getElementById("name").value = editRow.cells[0].textContent;
-        document.getElementById("phone").value = editRow.cells[1].textContent;
-        document.getElementById("email").value = editRow.cells[2].textContent;
-      }
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
